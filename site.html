@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Links</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Courier New", "Liberation Mono", "Nimbus Mono L", monospace;
+            font-stretch: condensed;
+            background-color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .header {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Reading and Reference</div>
+    <div class="container">
+        <!-- Column 1: Computing and Other Reading -->
+        <div class="column">
+            <!-- Computing -->
+            <a href="https://www.reddit.com/r/sysadmin/" target="_blank">r/sysadmin</a>
+            <a href="https://www.reddit.com/r/cloudcomputing/" target="_blank">r/cloudcomputing</a>
+            <a href="https://www.reddit.com/r/devops/" target="_blank">r/devops</a>
+            <a href="https://www.reddit.com/r/networking/" target="_blank">r/networking</a>
+            <a href="https://www.reddit.com/r/AZURE/" target="_blank">r/AZURE</a>
+            <a href="https://www.reddit.com/r/aws/" target="_blank">r/aws</a>
+            <a href="https://www.reddit.com/r/linux/" target="_blank">r/linux</a>
+            <a href="https://www.reddit.com/r/NixOS/" target="_blank">r/NixOS</a>
+            <a href="https://www.reddit.com/r/linuxmasterrace/" target="_blank">r/linuxmasterrace</a>
+            <a href="https://www.reddit.com/r/linux_gaming/" target="_blank">r/linux_gaming</a>
+            <a href="https://learn.microsoft.com/" target="_blank">Microsoft Learn</a>
+            <a href="https://aws.amazon.com/documentation/" target="_blank">AWS Documentation</a>
+            <a href="https://cloud.google.com/docs" target="_blank">Google Cloud Docs</a>
+            <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a>
+
+            <hr>
+
+            <!-- Other Reading -->
+            <a href="https://www.reddit.com/r/worldnews/" target="_blank">r/worldnews</a>
+            <a href="https://www.reddit.com/r/Africa/" target="_blank">r/Africa</a>
+            <a href="https://www.reddit.com/r/PhilosophyofScience/" target="_blank">r/PhilosophyofScience</a>
+            <a href="https://www.reddit.com/r/ExperimentalFilm/" target="_blank">r/ExperimentalFilm</a>
+            <a href="https://www.reddit.com/r/Chefit/" target="_blank">r/Chefit</a>
+        </div>
+
+        <!-- Column 2: Science Journals -->
+        <div class="column">
+            <a href="https://www.nature.com/" target="_blank">Nature</a>
+            <a href="https://www.nature.com/mp/" target="_blank">Nature Molecular Psychiatry</a>
+            <a href="https://www.nature.com/nbt/" target="_blank">Nature Biotechnology</a>
+            <a href="https://www.nature.com/nchembio/" target="_blank">Nature Chemical Biology</a>
+            <a href="https://www.nature.com/natdigest/" target="_blank">Nature Digest</a>
+            <a href="https://www.nature.com/nm/" target="_blank">Nature Medicine</a>
+            <a href="https://www.nature.com/nrd/" target="_blank">Nature Reviews Drug Discovery</a>
+            <a href="https://www.nature.com/nrmethods/" target="_blank">Nature Reviews Methods Primers</a>
+            <a href="https://www.nature.com/sdata/" target="_blank">Scientific Data</a>
+            <a href="https://www.nature.com/srep/" target="_blank">Scientific Reports</a>
+            <a href="https://www.nature.com/nwat/" target="_blank">Nature Water</a>
+
+            <hr>
+
+            <a href="https://www.science.org/" target="_blank">Science</a>
+            <a href="https://www.pnas.org/" target="_blank">PNAS</a>
+            <a href="https://www.cell.com/" target="_blank">Cell</a>
+            <a href="https://elifesciences.org/" target="_blank">eLife</a>
+            <a href="https://www.thelancet.com/" target="_blank">The Lancet</a>
+            <a href="https://journals.plos.org/plosone/" target="_blank">PLOS ONE</a>
+            <a href="https://www.annualreviews.org/" target="_blank">Annual Reviews</a>
+            <a href="https://knowablemagazine.org/" target="_blank">Knowable Magazine</a>
+        </div>
+
+        <!-- Column 3: News, Museums, Music -->
+        <div class="column">
+            <!-- News -->
+            <a href="https://www.reuters.com/" target="_blank">Reuters</a>
+            <a href="https://www.ft.com/" target="_blank">Financial Times</a>
+            <a href="https://www.bloomberg.com/" target="_blank">Bloomberg</a>
+            <a href="https://www.theguardian.com/international" target="_blank">The Guardian</a>
+            <a href="https://www.nytimes.com/section/world" target="_blank">New York Times World</a>
+            <a href="https://www.economist.com/" target="_blank">The Economist</a>
+            <a href="https://www.propublica.org/" target="_blank">ProPublica</a>
+            <a href="https://longreads.com/" target="_blank">Longreads</a>
+
+            <hr>
+
+            <!-- Museums -->
+            <a href="https://www.louvre.fr/en" target="_blank">The Louvre</a>
+            <a href="https://www.metmuseum.org/" target="_blank">The Metropolitan Museum of Art</a>
+            <a href="https://www.britishmuseum.org/" target="_blank">The British Museum</a>
+            <a href="https://www.moma.org/" target="_blank">Museum of Modern Art</a>
+            <a href="https://www.rijksmuseum.nl/en" target="_blank">Rijksmuseum</a>
+
+            <hr>
+
+            <!-- Concert Halls and Opera Houses -->
+            <a href="https://www.metopera.org/" target="_blank">Metropolitan Opera</a>
+            <a href="https://www.wiener-staatsoper.at/en/" target="_blank">Vienna State Opera</a>
+            <a href="https://www.teatroallascala.org/en" target="_blank">Teatro alla Scala</a>
+            <a href="https://www.royaloperahouse.org/" target="_blank">Royal Opera House</a>
+            <a href="https://www.philharmonie.de/en/" target="_blank">Berlin Philharmonie</a>
+        </div>
+    </div>
+</body>
+</html>
+
