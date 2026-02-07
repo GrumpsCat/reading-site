@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Courier New", "Liberation Mono", "Nimbus Mono L", monospace;
+            font-stretch: condensed;
+            background-color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .header {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .item {
+            display: block;
+            margin-bottom: 8px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Site Title</div>
+
+    <div class="container">
+
+        <!-- Column 1 -->
+        <div class="column">
+            <div class="item">Placeholder item A</div>
+            <div class="item">Placeholder item B</div>
+            <div class="item">Placeholder item C</div>
+
+            <hr>
+
+            <div class="item">Placeholder item D</div>
+            <div class="item">Placeholder item E</div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column">
+            <div class="item">Placeholder item 1</div>
+            <div class="item">Placeholder item 2</div>
+            <div class="item">Placeholder item 3</div>
+
+            <hr>
+
+            <div class="item">Placeholder item 4</div>
+            <div class="item">Placeholder item 5</div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="column">
+            <div class="item">Placeholder alpha</div>
+            <div class="item">Placeholder beta</div>
+            <div class="item">Placeholder gamma</div>
+
+            <hr>
+
+            <div class="item">Placeholder delta</div>
+            <div class="item">Placeholder epsilon</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
