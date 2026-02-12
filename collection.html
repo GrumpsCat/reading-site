@@ -3,198 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Canon</title>
+    <title>Canon</title>
     <style>
         body {
             margin: 0;
-            font-family: "EB Garamond", "Garamond", "Times New Roman", serif;
             background-color: white;
-            line-height: 1.45;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .column {
-            flex: 1;
-            padding: 24px;
-            box-sizing: border-box;
-            text-align: left;
+            font-family: "Cormorant Garamond", "Garamond", "Georgia", serif;
+            font-size: 17px;
+            line-height: 1.5;
+            color: #111;
         }
         .header {
             text-align: center;
             font-size: 2.2em;
-            margin: 24px 0;
+            margin: 40px 0 30px 0;
+            letter-spacing: 1px;
         }
-        h2 {
-            font-size: 1.1em;
-            margin-top: 24px;
-            margin-bottom: 8px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto 60px auto;
         }
-        p {
-            margin: 4px 0;
+        .column {
+            flex: 1;
+            padding: 0 40px;
+        }
+        .section-title {
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .item {
+            margin-bottom: 6px;
         }
         hr {
             border: none;
-            border-top: 1px solid black;
-            margin: 18px 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-<div class="header">Canon</div>
+<div class="header">Personal Reference Index</div>
 
 <div class="container">
 
-    <!-- Column 1: Film / Food / Places -->
+    <!-- Column 1 -->
     <div class="column">
-        <h2>Film / Cinema</h2>
-
-        <p><strong>Jonathan Glazer</strong></p>
-        <p>The Zone of Interest</p>
-        <p>Under the Skin</p>
+        <div class="section-title">Film</div>
+        <div class="item">Invention — Courtney Stephens (2024)</div>
 
         <hr>
 
-        <p><strong>David Bordwell</strong></p>
-        <p>Film theory</p>
-        <p>Formalism</p>
-        <p>Narrative structure</p>
-        <p>Style as system</p>
+        <div class="section-title">Music</div>
+        <div class="item">Karl Jenkins — Palladio (1995)</div>
+        <div class="item">Madlib — Shades of Blue</div>
+        <div class="item">Luiz Bonfá — Black Orpheus / Manhã de Carnaval</div>
+        <div class="item">Charles Wright & the Watts 103rd Street Rhythm Band — Express Yourself</div>
 
         <hr>
 
-        <h2>Writing</h2>
-        <p><strong>Rena Anakwe</strong></p>
-
-        <hr>
-
-        <h2>Food / Cuisine</h2>
-
-        <p>Rillettes</p>
-        <p>Saucisson</p>
-        <p>Pâté en croûte</p>
-        <p>Œufs mimosa</p>
-        <p>Baba au rhum</p>
-
-        <p>Teppanyaki</p>
-
-        <hr>
-
-        <h2>Chefs / Producers</h2>
-
-        <p><strong>André Claveau</strong></p>
-
-        <p><strong>Joël Dupuch</strong></p>
-        <p>Oysters</p>
-        <p>Enc(e) ospitalité / charcuterie</p>
-
-        <hr>
-
-        <h2>Restaurants</h2>
-
-        <p>Mirazur</p>
-        <p>Septime</p>
-        <p><a href="https://www.c-asincharlie.com/" target="_blank">C as in Charlie (NYC)</a></p>
+        <div class="section-title">Cultural Figures</div>
+        <div class="item">Emanuele Coccia</div>
+        <div class="item">Oba De Wheno Aholu Menu-Toyi I</div>
     </div>
 
-    <!-- Column 2: Philosophy -->
+    <!-- Column 2 -->
     <div class="column">
-        <h2>Ancient & Classical</h2>
-        <p>Plato</p>
-        <p>Aristotle</p>
-        <p>Hypatia</p>
-        <p>Marcus Aurelius</p>
-        <p>Lucretius</p>
+        <div class="section-title">Philosophy</div>
 
-        <hr>
-
-        <h2>German Idealism</h2>
-        <p>Immanuel Kant</p>
-        <p>Johann Gottlieb Fichte</p>
-        <p>F. W. J. Schelling</p>
-        <p>G. W. F. Hegel</p>
-        <p>Friedrich Hölderlin</p>
-
-        <hr>
-
-        <h2>Marxism & Ideology</h2>
-        <p>Karl Marx</p>
-        <p>Friedrich Engels</p>
-        <p>Louis Althusser</p>
-        <p>Terry Eagleton</p>
-        <p>G. A. Cohen</p>
-
-        <hr>
-
-        <h2>Analytic Philosophy</h2>
-        <p>Gottlob Frege</p>
-        <p>Bertrand Russell</p>
-        <p>Frank Ramsey</p>
-        <p>G. E. Moore</p>
-        <p>Ludwig Wittgenstein</p>
-        <p>W. V. O. Quine</p>
-        <p>Rudolf Carnap</p>
-        <p>Nelson Goodman</p>
-        <p>Wilfrid Sellars</p>
-        <p>Hilary Putnam</p>
-
-        <hr>
-
-        <h2>Language, Mind & Metaphysics</h2>
-        <p>David Lewis</p>
-        <p>Saul Kripke</p>
-        <p>Donald Davidson</p>
-        <p>Alvin Plantinga</p>
-        <p>Elizabeth Anscombe</p>
-        <p>John Searle</p>
-        <p>Daniel Dennett</p>
-        <p>Jerry Fodor</p>
-
-        <hr>
-
-        <h2>Continental & Critical Theory</h2>
-        <p>Martin Heidegger</p>
-        <p>Jacques Derrida</p>
-        <p>Gilles Deleuze</p>
-        <p>Michel Foucault</p>
-        <p>Judith Butler</p>
-        <p>Gianni Vattimo</p>
-
-        <hr>
-
-        <h2>Feminist Philosophy</h2>
-        <p>Mary Wollstonecraft</p>
-        <p>Simone de Beauvoir</p>
-        <p>Shulamith Firestone</p>
-        <p>Iris Marion Young</p>
-        <p>Kate Millett</p>
-
-        <hr>
-
-        <h2>Frankfurt School</h2>
-        <p>Max Horkheimer</p>
-        <p>Theodor W. Adorno</p>
-        <p>Herbert Marcuse</p>
-        <p>Jürgen Habermas</p>
-        <p>Karl-Otto Apel</p>
+        <div class="item">Immanuel Kant</div>
+        <div class="item">Johann Gottlieb Fichte</div>
+        <div class="item">Friedrich Schelling</div>
+        <div class="item">G.W.F. Hegel</div>
+        <div class="item">Karl Marx</div>
+        <div class="item">Louis Althusser</div>
+        <div class="item">Terry Eagleton</div>
+        <div class="item">G.A. Cohen</div>
+        <div class="item">Gottlob Frege</div>
+        <div class="item">Bertrand Russell</div>
+        <div class="item">Ludwig Wittgenstein</div>
+        <div class="item">Willard Van Orman Quine</div>
+        <div class="item">David Lewis</div>
+        <div class="item">Saul Kripke</div>
+        <div class="item">Daniel Dennett</div>
+        <div class="item">Michel Foucault</div>
+        <div class="item">Jacques Derrida</div>
+        <div class="item">Gilles Deleuze</div>
+        <div class="item">Judith Butler</div>
+        <div class="item">Simone de Beauvoir</div>
+        <div class="item">Plato</div>
+        <div class="item">Aristotle</div>
+        <div class="item">Marcus Aurelius</div>
     </div>
 
-    <!-- Column 3: Themes -->
+    <!-- Column 3 -->
     <div class="column">
-        <h2>Themes / Through-lines</h2>
+        <div class="section-title">Dishes</div>
+        <div class="item">Olivier Salad</div>
+        <div class="item">Pelmeni</div>
+        <div class="item">Medovik</div>
+        <div class="item">Elena Ruz Sandwich</div>
+        <div class="item">Jambon-Beurre</div>
 
-        <p>Austere moral seriousness</p>
-        <p>Formal restraint</p>
-        <p>Anti-spectacle taste</p>
-        <p>Craft over luxury</p>
-        <p>Materiality: bodies, labor, texture</p>
-        <p>European cultural gravity</p>
-        <p>High culture without gloss</p>
+        <hr>
+
+        <div class="section-title">Markets / Places</div>
+        <div class="item">Bazaar on Cambridge</div>
+
+        <hr>
+
+        <div class="section-title">Restaurants — Boston</div>
+        <div class="item">Rag's Tavern — Quincy</div>
+
+        <hr>
+
+        <div class="section-title">Restaurants — San Francisco</div>
+        <div class="item">Thai Nghiep Ky Mi Gia — Duck Noodle Soup</div>
+        <div class="item">Chinese Bakery & Deli — San Leandro, CA</div>
     </div>
 
 </div>
 
 </body>
-</html>
+<
