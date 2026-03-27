@@ -11,6 +11,22 @@
             font-stretch: condensed;
             background-color: white;
         }
+        .topnav {
+            text-align: center;
+            padding: 14px 0;
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .topnav a {
+            display: inline-block;
+            margin: 0 14px;
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+        }
+        .topnav a:hover {
+            text-decoration: underline;
+        }
         .container {
             display: flex;
             justify-content: space-between;
@@ -21,7 +37,7 @@
             box-sizing: border-box;
             text-align: left;
         }
-        a {
+        .column a {
             text-decoration: none;
             color: black;
             display: block;
@@ -40,7 +56,17 @@
     </style>
 </head>
 <body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="data.html">Data</a>
+        <a href="events.html">Events</a>
+        <a href="links.html">Links</a>
+    </div>
+
     <div class="header">Reading and Reference</div>
+
     <div class="container">
         <!-- Column 1: Computing and Other Reading -->
         <div class="column">
