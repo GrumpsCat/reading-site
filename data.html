@@ -1,85 +1,204 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Column Layout</title>
+    <title>Philosophy of Color</title>
     <style>
         body {
             margin: 0;
-            font-family: "Courier New", "Liberation Mono", "Nimbus Mono L", monospace;
-            font-stretch: condensed;
             background-color: white;
+            color: #111;
+            font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
+            line-height: 1.55;
         }
+
+        .topnav {
+            text-align: center;
+            padding: 14px 0;
+            border-bottom: 1px solid black;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+        }
+
+        .topnav a {
+            display: inline-block;
+            margin: 0 14px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .topnav a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 0 10px 0;
+            font-weight: normal;
+            letter-spacing: 0.01em;
+        }
+
         .container {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
         }
+
         .column {
             flex: 1;
-            padding: 20px;
+            padding: 20px 28px;
             box-sizing: border-box;
             text-align: left;
         }
-        .header {
-            text-align: center;
-            font-size: 2em;
-            margin: 20px 0;
-        }
+
         .item {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 18px;
+            max-width: 34em;
         }
+
+        .item-title {
+            font-style: italic;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .item p {
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
         hr {
             border: none;
             border-top: 1px solid black;
-            margin: 15px 0;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+            }
+
+            .item {
+                max-width: none;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="header">Data</div>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Essays</a>
+        <a href="#">Notes</a>
+        <a href="#">Archive</a>
+        <a href="#">About</a>
+    </div>
+
+    <div class="header">Philosophy of Color</div>
 
     <div class="container">
 
         <!-- Column 1 -->
         <div class="column">
-            <div class="item">Placeholder item A</div>
-            <div class="item">Placeholder item B</div>
-            <div class="item">Placeholder item C</div>
+            <div class="item">
+                <div class="item-title">C. L. Hardin</div>
+                <p>
+                    Hardin is one of the big reasons late-20th-century philosophers of color started taking color science seriously.
+                    His landmark book <em>Color for Philosophers</em> pushed the field to confront findings about opponent processing,
+                    variation across perceivers, and the difficulty of identifying ordinary colors like red or green with neat physical
+                    properties. Hardin is usually read as leaning toward color irrealism or eliminativism: ordinary objects are not
+                    really colored in the way they visually seem to be. A main pressure point for him is interpersonal and intrapersonal
+                    variation—there is no obviously non-arbitrary way to pick one physical reflectance type as the real red.
+                </p>
+            </div>
 
             <hr>
 
-            <div class="item">Placeholder item D</div>
-            <div class="item">Placeholder item E</div>
+            <div class="item">
+                <div class="item-title">Nelson Goodman</div>
+                <p>
+                    Goodman is a bit different from the others because he is not mainly famous for a full-dress theory of color perception.
+                    His importance comes from two places. First, in <em>The Structure of Appearance</em>, he treats qualities such as colors
+                    as part of a larger project about how experience can be organized and constructed. Second, his “new riddle of induction”
+                    uses color predicates like green, blue, grue, and bleen to show that prediction is not just about evidence; it also depends
+                    on which predicates are legitimate or “projectible.” So Goodman matters for color because he shows how much our theories of
+                    color depend on classification, language, and worldmaking, not just raw sensation.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <div class="item-title">Barry Maund</div>
+                <p>
+                    Maund is both a major contributor to the philosophy of color and the author of the Stanford Encyclopedia entry on the topic.
+                    His view is often grouped with color irrealism or eliminativism. He is especially interested in the gap between the
+                    phenomenology of color—how colors appear structured in experience—and any plausible candidate in the external world.
+                    In the SEP discussion, Maund is repeatedly associated with the argument that physicalist realist theories struggle to capture
+                    the experienced unity and oppositions among colors, and he is listed among contemporary eliminativists about ordinary color
+                    properties.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <div class="item-title">Jonathan Cohen</div>
+                <p>
+                    Cohen is the leading contemporary defender of color relationalism. His core claim is that colors are not simple,
+                    monadic properties like red <em>simpliciter</em> or blue <em>simpliciter</em>. Instead, they are relational properties such as
+                    red-for-perceiver-S in circumstances-C. His main motivation is the huge amount of perceptual variation: the same object can
+                    look different across lighting conditions, perceivers, species, and contexts. Cohen’s “Master Argument” says there is no
+                    principled, non-question-begging reason to privilege one of those variants as the uniquely veridical one, so the best
+                    explanation is to relativize color to perceivers and viewing conditions.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <div class="item-title">Alex Byrne</div>
+                <p>
+                    Byrne, often working with David Hilbert, is one of the central defenders of color realism, especially a broadly physicalist
+                    version. The basic idea is that colors are objective properties of objects, typically understood in terms of reflectance-types
+                    or related physical ways of affecting light. Byrne argues that physicalism about color is much more scientifically respectable
+                    than many philosophers assumed. In the SEP summary, Byrne and Hilbert’s view is that color experiences represent objects as
+                    having certain “hue magnitudes,” and these are then explained in physical terms. So Byrne is on the realist or objectivist
+                    side against both eliminativists and strong relationalists.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="item">
+                <div class="item-title">Michael Tye</div>
+                <p>
+                    Tye is also a prominent objectivist realist about color, and he connects that view to his wider representationalist theory
+                    of consciousness. In broad strokes: color experience has representational content, and that content represents objective
+                    features of the world rather than merely projecting color into the mind. Like Byrne, Tye tries to preserve common-sense
+                    realism about color while still respecting color science. In the SEP discussion, Tye is grouped with objectivists and with
+                    the attempt to explain color in terms of physical properties tied to the visual system’s opponent-processing structure.
+                </p>
+            </div>
         </div>
 
         <!-- Column 2 -->
-        <div class="column">
-            <div class="item">Placeholder item 1</div>
-            <div class="item">Placeholder item 2</div>
-            <div class="item">Placeholder item 3</div>
-
-            <hr>
-
-            <div class="item">Placeholder item 4</div>
-            <div class="item">Placeholder item 5</div>
-        </div>
+        <div class="column"></div>
 
         <!-- Column 3 -->
-        <div class="column">
-            <div class="item">Placeholder alpha</div>
-            <div class="item">Placeholder beta</div>
-            <div class="item">Placeholder gamma</div>
-
-            <hr>
-
-            <div class="item">Placeholder delta</div>
-            <div class="item">Placeholder epsilon</div>
-        </div>
+        <div class="column"></div>
 
     </div>
 
 </body>
 </html>
+```
